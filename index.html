@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>주식 시뮬레이터 Normal</title>
+    <link rel="stylesheet" href="pr2.css">
+    <script src="./pr2.js"></script>
+</head>
+<body>
+    <h1 id="title">주식 시뮬레이터 Normal</h1>
+    <h1 id="soudon">현재 소유 금액 : 1000원</h1>
+    <br><br><br><br> 
+    <h2>오늘의 주식 상품</h2>
+    <div style="display: inline-block;">
+        <img id="stock1"src="흙.png" alt="minecraftsoil">
+        <h3 id="soilboxfont">흙 주식 0%</h3>
+        <h4>기본 가격 : 500원</h4>
+        <h3 id="soilboxfont2">현재 가격 : 500원</h3>
+        <h4 id="soilstocksou">현재 주식 소유 수 : 0개</h4>
+        <button onclick="sousoilstocklive();">매수</button>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button onclick="sousoilstocklive2();">매도</button>
+    </div>
+    <div style="display: inline-block;">
+        <img id="stock2" src="나무.webp" alt="woodstock">
+        <h3 id="woodboxfont">나무 주식 : 0%</h3>
+        <h4>기본 가격 : 1000원</h4>
+        <h3 id="woodboxfont2">현재 가격 : 1000원</h3>
+        <h4 id="woodstocksou">현재 주식 소유 수 : 0개</h4>
+        <button onclick="souwoodstocklive();">매수</button>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button onclick="souwoodstocklive2();">매도</button>
+    </div>
+    <div style="display: inline-block;">
+        <img id="stock3" src="돌.webp" alt="stone">
+        <h3 id="stoneboxfont">돌 주식 0%</h3>
+        <h4>기본 가격 : 2000원</h4>
+        <h3 id="stoneboxfont2">현재 가격 : 2000원</h3>
+        <h4 id="stonestocksou">현재 주식 소유 수 : 0개</h4>
+        <button onclick="soustonestocklive();">매수</button>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button onclick="soustonestocklive2();">매도</button>
+    </div>
+    <div style="display: inline-block;">
+        <img id="stock4" src="철.webp" alt="iron">
+        <h3 id="ironboxfont">철 주식 0%</h3>
+        <h4>기본 가격 : 3000원</h4>
+        <h3 id="ironboxfont2">현재 가격 : 3000원</h3>
+        <h4 id="ironstocksou">현재 주식 소유 수 : 0개</h4>
+        <button onclick="souironstocklive();">매수</button>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button onclick="souironstocklive2();">매도</button>
+    </div>
+    
+    <div style="display: inline-block;">
+        <img id="stock5"src="다이아몬드.png" alt="diamond">
+        <h3 id="diamondboxfont">다이아몬드 주식 0%</h3>
+        <h4>기본 가격 : 10000원</h4>
+        <h3 id="diamondboxfont2">현재 가격 : 10000원</h3>
+        <h4 id="diamondstocksou">현재 주식 소유 수 : 0개</h4>
+        <button onclick="soudiamondstocklive();">매수</button>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button onclick="soudiamondstocklive2();">매도</button>
+    </div>
+    <div style="display: inline-block;">
+        <img id="stock6"src="흑요석.webp" alt="obsidian">
+        <h3 id="obsidianboxfont">흑요석 주식 0%</h3>
+        <h4>기본 가격 : 100만원</h4>
+        <h3 id="obsidianboxfont2">현재 가격 : 100만원</h3>
+        <h4 id="obsidianstocksou">현재 주식 소유 수 : 0개</h4>
+        <button onclick="souobsidianstocklive();">매수</button>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button onclick="souobsidianstocklive2();">매도</button>
+    </div>
+
+
+
+
+    <br><br><br><br><br><br>
+    <div style="display: inline-block;">
+        <img id="makeplank" src="나무판자.webp" alt="makeplank">
+        <h3>필요 물품 : 나무주식 1개</h3>
+        <button onclick="makeplank();">나무 판자 4개 만들기</button>
+    </div>
+    &nbsp;&nbsp;&nbsp;
+    <div style="display: inline-block;">
+        <img id="makestick" src="막대기.jpg" alt="makestick">
+        <h3>필요 물품 : 나무 2개</h3>
+        <button onclick="makestick();">막대기 4개 만들기</button>
+    </div>
+    &nbsp;&nbsp;&nbsp;
+    <div style="display: inline-block;">
+        <img id="makecraft" src="작업대.webp" alt="makecraft">
+        <h3>필요 물품 : 나무 4개</h3>
+        <button onclick="makecraft();">작업대 만들기</button>
+    </div>
+    &nbsp;&nbsp;&nbsp;
+    <div style="display: inline-block;">
+        <img id="makestonepick" src="돌곡괭이.png" alt="makestonepick">
+        <h3>필요 물품 : 막대기 2개, 돌 3개, 작업대 1개</h3>
+        <button onclick="makestonepick();">돌 곡괭이 만들기</button>
+    </div>
+    &nbsp;&nbsp;&nbsp;
+    <div style="display: inline-block;">
+        <img id="newironcoreimg" src="새철.webp" alt="newironcoreimg">
+        <h3 id="ironbuyend">필요 돈 : 10만원</h3>
+        <button onclick="newironcore();" id="ironbuyend2">새로운 철 이미지</button>
+    </div>
+    &nbsp;&nbsp;&nbsp;
+    <div style="display: inline-block;">
+        <img id="makeironpick" src="철곡괭이.png" alt="makeironpick">
+        <h3>필요 물품 : 작업대 1개, 막대기 2개, 철 3개</h3>
+        <button onclick="makeironpick();">철 곡괭이 만들기</button>
+    </div>
+    &nbsp;&nbsp;&nbsp;
+    <div style="display: inline-block;">
+        <img id="diamondpick" src="다이아몬드곡괭이.png" alt="diamondpick">
+        <h3>필요 물품 : 작업대 1개, 막대기 2개, 다이아몬드 3개</h3>
+        <button onclick="makediamondpick();">다이아몬드곡괭이 만들기</button>
+    </div>
+
+
+
+    <br><br><br>
+    <h3>현재 소유하고 있는 아이템 개수</h3>
+    <br><br>
+    <div style="display: inline-block;">
+        <img id="makeplank2" src="나무판자.webp" alt="makeplank2">
+        <h3 id="plank"></h3>
+    </div>
+    &nbsp;&nbsp;&nbsp;
+    <div style="display: inline-block;">
+        <img id="makestick2" src="막대기.jpg" alt="makestick2">
+        <h3 id="stick"></h3>
+    </div>
+    &nbsp;&nbsp;&nbsp;
+    <div style="display: inline-block;">
+        <img id="makecraft2" src="작업대.webp" alt="makecraft2">
+        <h3 id="craft"></h3>
+    </div>
+    &nbsp;&nbsp;&nbsp;
+    <div style="display: inline-block;">
+        <img id="makestonepick2" src="돌곡괭이.png" alt="makestonepick2">
+        <h3 id="stonepick"></h3>
+    </div>
+    &nbsp;&nbsp;&nbsp;
+    <div style="display: inline-block;">
+        <img id="makeironpick2" src="철곡괭이.png" alt="makeironpick2">
+        <h3 id="ironpick"></h3>
+    </div>
+    &nbsp;&nbsp;&nbsp;
+    <div style="display: inline-block;">
+        <img id="makediamondpick2" src="다이아몬드곡괭이.png" alt="makediamondpick2">
+        <h3 id="diamondpick"></h3>
+    </div>
+    <br><br><br><br><br><br>
+    <h2>TMI</h2>
+    <ul>
+        <li>내구도는 도구를 만들때 개수에 포함됩니다 즉, 돌곡괭이를 1개 제작 했는데 10개가 제작되어도 이상한게 아닙니다</li>
+        <br>
+        <li><b>새로고침하면 모든 정보들이 날라갑니다</b></li>
+        <li><b>흑요석 10개를 사면 엔딩이 나타납니다</b></li>
+    </ul>
+    
+    
+
+</body>
+</html>
